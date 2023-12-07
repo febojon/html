@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grayscale Image Demo</title>
+    <style>
+        .black-color {
+            transition: filter 0.7s ease-in-out;
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+        }
+
+        .black-color:hover {
+            -webkit-filter: grayscale(99%);
+            filter: grayscale(99%);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class="black-color" src="/upload2/black-color.jpg" alt="Black and White Image" />
+    </div>
+</body>
+</html>
